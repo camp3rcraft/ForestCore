@@ -1,0 +1,11 @@
+name: ExamplePlugin
+version: '${project.version}'
+main: ru.forestcore.example.ExamplePlugin
+api-version: '1.16'
+authors: [camper_crafting]
+description: Example plugin for ForestCore
+depend: [ForestCore]
+commands:
+  example:
+    description: Example command for color testing
+    usage: /example [hex] 

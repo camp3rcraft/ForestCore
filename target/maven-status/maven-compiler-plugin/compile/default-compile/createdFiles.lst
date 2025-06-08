@@ -1,0 +1,10 @@
+ru\forestcore\example\ExamplePlugin$1.class
+ru\forestcore\models\ForestPlugin.class
+ru\forestcore\example\ExamplePlugin.class
+ru\forestcore\ForestCore.class
+ru\forestcore\managers\PluginManager.class
+ru\forestcore\managers\UpdateChecker.class
+ru\forestcore\commands\ForestCoreCommand.class
+ru\forestcore\example\ExamplePlugin$ExampleCommand.class
+ru\forestcore\menus\PluginMenu.class
+ru\forestcore\utils\ColorUtils.class
