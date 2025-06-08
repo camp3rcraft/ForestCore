@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ru.forestcore"},{"l":"ru.forestcore.commands"},{"l":"ru.forestcore.example"},{"l":"ru.forestcore.managers"},{"l":"ru.forestcore.menus"},{"l":"ru.forestcore.models"},{"l":"ru.forestcore.utils"}];updateSearchResults();
