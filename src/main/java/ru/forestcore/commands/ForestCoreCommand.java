@@ -62,9 +62,9 @@ public class ForestCoreCommand implements CommandExecutor {
     private void sendInfo(CommandSender sender, String pluginId) {
         if (pluginId == null) {
             sender.sendMessage(ColorUtils.colorize("&8&m--------------------------------"));
-            sender.sendMessage(ColorUtils.colorize("&eForestCore &7- Core plugin for Forest plugins"));
+            sender.sendMessage(ColorUtils.colorize("&#b1ed9d&lForestCore &7- Core plugin for camper_crafting plugins"));
             sender.sendMessage(ColorUtils.colorize("&7Version: &f" + plugin.getDescription().getVersion()));
-            sender.sendMessage(ColorUtils.colorize("&7Author: &fForest"));
+            sender.sendMessage(ColorUtils.colorize("&7Author: &fcamper_crafting"));
             sender.sendMessage(ColorUtils.colorize("&8&m--------------------------------"));
         } else {
             ForestPlugin forestPlugin = plugin.getPluginManager().getPlugin(pluginId);
@@ -74,11 +74,11 @@ public class ForestCoreCommand implements CommandExecutor {
             }
 
             sender.sendMessage(ColorUtils.colorize("&8&m--------------------------------"));
-            sender.sendMessage(ColorUtils.colorize("&e" + forestPlugin.getName()));
+            sender.sendMessage(ColorUtils.colorize("&#b1ed9d&l" + forestPlugin.getName()));
             sender.sendMessage(ColorUtils.colorize("&7Version: &f" + forestPlugin.getVersion()));
             sender.sendMessage(ColorUtils.colorize("&7ID: &f" + forestPlugin.getId()));
             sender.sendMessage(ColorUtils.colorize("&7Author: &f" + forestPlugin.getAuthor()));
-            sender.sendMessage(ColorUtils.colorize("&7Status: " + (forestPlugin.isEnabled() ? "&aEnabled" : "&cDisabled")));
+            sender.sendMessage(ColorUtils.colorize("&7Status: " + (forestPlugin.isEnabled() ? "&#a1ff2eEnabled" : "&#ff2e2eDisabled")));
             sender.sendMessage(ColorUtils.colorize("&7Modrinth: &f" + forestPlugin.getModrinthUrl()));
             sender.sendMessage(ColorUtils.colorize("&7GitHub: &f" + forestPlugin.getGithubUrl()));
             sender.sendMessage(ColorUtils.colorize("&8&m--------------------------------"));
@@ -87,7 +87,7 @@ public class ForestCoreCommand implements CommandExecutor {
 
     private void sendHelp(CommandSender sender) {
         sender.sendMessage(ColorUtils.colorize("&8&m--------------------------------"));
-        sender.sendMessage(ColorUtils.colorize("&eForestCore Commands:"));
+        sender.sendMessage(ColorUtils.colorize("&#b1ed9d&lForestCore Commands:"));
         sender.sendMessage(ColorUtils.colorize("&7/fcore &8- &fShow ForestCore information"));
         sender.sendMessage(ColorUtils.colorize("&7/fcore help &8- &fShow this help message"));
         sender.sendMessage(ColorUtils.colorize("&7/fcore help <plugin-id> &8- &fShow plugin commands"));
@@ -105,7 +105,7 @@ public class ForestCoreCommand implements CommandExecutor {
         }
 
         sender.sendMessage(ColorUtils.colorize("&8&m--------------------------------"));
-        sender.sendMessage(ColorUtils.colorize("&e" + forestPlugin.getName() + " Commands:"));
+        sender.sendMessage(ColorUtils.colorize("&#b1ed9d&l" + forestPlugin.getName() + " Commands:"));
         for (String cmd : forestPlugin.getCommands()) {
             sender.sendMessage(ColorUtils.colorize("&7" + cmd));
         }
@@ -114,9 +114,9 @@ public class ForestCoreCommand implements CommandExecutor {
 
     private void reloadPlugin(CommandSender sender, String pluginId) {
         if (plugin.getPluginManager().reloadPluginConfig(pluginId)) {
-            sender.sendMessage(ColorUtils.colorize("&aPlugin configuration reloaded successfully!"));
+            sender.sendMessage(ColorUtils.colorize("&#a1ff2ePlugin configuration reloaded successfully!"));
         } else {
-            sender.sendMessage(ColorUtils.colorize("&cFailed to reload plugin configuration!"));
+            sender.sendMessage(ColorUtils.colorize("&#ff2e2eFailed to reload plugin configuration!"));
         }
     }
 } 
